@@ -1,0 +1,139 @@
+<!-- Warning this page Charset must be UTF-8-->
+<!-- Complete Demo Php version 5.1-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Domain Name Availiability Search</title>
+
+ <script type="text/javascript" language="javascript">
+						function validate2(aform){
+							if (document.getElementById("domainName").value.length  < 3){
+								alert('Παρακαλώ συμπληρώστε όνομα χώρου με 3 χαρακτήρες τουλάχιστον');
+								return false;
+							}
+							return true;
+						}
+					</script>
+					 <script language=javascript>
+
+function checkDomain2(nname)
+{
+var arr = new Array(
+'.com','.net','.org','.biz','.coop','.info','.museum','.name',
+'.pro','.edu','.gov','.int','.mil','.ac','.ad','.ae','.af','.ag',
+'.ai','.al','.am','.an','.ao','.aq','.ar','.as','.at','.au','.aw',
+'.az','.ba','.bb','.bd','.be','.bf','.bg','.bh','.bi','.bj','.bm',
+'.bn','.bo','.br','.bs','.bt','.bv','.bw','.by','.bz','.ca','.cc',
+'.cd','.cf','.cg','.ch','.ci','.ck','.cl','.cm','.cn','.co','.cr',
+'.cu','.cv','.cx','.cy','.cz','.de','.dj','.dk','.dm','.do','.dz',
+'.ec','.ee','.eg','.eh','.er','.es','.et','.fi','.fj','.fk','.fm',
+'.fo','.fr','.ga','.gd','.ge','.gf','.gg','.gh','.gi','.gl','.gm',
+'.gn','.gp','.gq','.gr','.gs','.gt','.gu','.gv','.gy','.hk','.hm',
+'.hn','.hr','.ht','.hu','.id','.ie','.il','.im','.in','.io','.iq',
+'.ir','.is','.it','.je','.jm','.jo','.jp','.ke','.kg','.kh','.ki',
+'.km','.kn','.kp','.kr','.kw','.ky','.kz','.la','.lb','.lc','.li',
+'.lk','.lr','.ls','.lt','.lu','.lv','.ly','.ma','.mc','.md','.mg',
+'.mh','.mk','.ml','.mm','.mn','.mo','.mp','.mq','.mr','.ms','.mt',
+'.mu','.mv','.mw','.mx','.my','.mz','.na','.nc','.ne','.nf','.ng',
+'.ni','.nl','.no','.np','.nr','.nu','.nz','.om','.pa','.pe','.pf',
+'.pg','.ph','.pk','.pl','.pm','.pn','.pr','.ps','.pt','.pw','.py',
+'.qa','.re','.ro','.rw','.ru','.sa','.sb','.sc','.sd','.se','.sg',
+'.sh','.si','.sj','.sk','.sl','.sm','.sn','.so','.sr','.st','.sv',
+'.sy','.sz','.tc','.td','.tf','.tg','.th','.tj','.tk','.tm','.tn',
+'.to','.tp','.tr','.tt','.tv','.tw','.tz','.ua','.ug','.uk','.um',
+'.us','.uy','.uz','.va','.vc','.ve','.vg','.vi','.vn','.vu','.ws',
+'.wf','.ye','.yt','.yu','.za','.zm','.zw');
+
+var mai = nname;
+var val = true;
+
+//var dot = mai.lastIndexOf(".");
+ //alert("Your dot name is "+dot+" correct");
+var dname = mai;
+// alert("Your domain name is "+dname+" correct");
+//var ext = mai.substring(dot,mai.length);
+//alert(ext);
+	
+if(dname.length>2 && dname.length<57)
+{
+	
+	
+		for(var j=0; j<dname.length; j++)
+		{
+		  var dh = dname.charAt(j);
+		  var hh = dh.charCodeAt(0);
+		   //alert("To hh einai "+hh+" correct");
+		  if((hh > 47 && hh<59) || (hh > 64 && hh<91) || (hh > 96 && hh<123)  || (hh > 944 && hh <970) || (hh > 912 && hh < 938) || hh==45 )
+		  {
+			 if((j==0 || j==dname.length-1) && hh == 45)	
+		  	 {
+		 	  	 alert("Το Domain name δεν πρέπει να ξεκινάει με '-'");
+			      return false;
+		 	 }
+		  }
+		else	{
+		  	 alert("Το domain name δεν πρέπει να περιέχει ειδικούς χαρακτήρες");
+			 return false;
+		  }
+		}
+	
+}
+else
+{
+ alert("Το Domain name πρέπει να περιέχει τουλάχιστον 3 χαρακτήρες");
+ return false;
+}	
+
+return true;
+}
+</script>
+</head>
+
+<body>
+<form name="domainSearch" action="reply.php" method="post" onSubmit="return checkDomain2(domainSearch.domainName.value)">
+ <table width="491"  border="0" cellspacing="0" cellpadding="2">
+  <tr>
+    <td colspan="4" style="padding-left:55px"><div align="left"><strong> Search for available domain names </strong></div></td>
+  </tr>
+  <tr><input name="code" type="hidden"/>
+    <td width="91" align="right"><div align="right"><strong>www.</strong></div></td>
+    <td colspan="2"><input name="domainName" type="text" size="30"> <select name="extension" id="extension">
+    <option value=".gr">.gr</option>
+     <option value=".com.gr">.com.gr</option>
+      <option value=".org.gr">.org.gr</option>
+       <option value=".net.gr">.net.gr</option>
+        <option value=".gov.gr">.gov.gr</option>
+         <option value=".eu">.eu</option>
+          <option value=".com">.com</option>
+           <option value=".net">.net</option>
+            <option value=".org">.org</option>
+             <option value=".info">.info</option>
+              <option value=".mobi">.mobi</option>
+               <option value=".name">.name</option>
+                <option value=".ac">.ac</option>
+                 <option value=".cc">.cc</option>
+                  <option value=".io">.io</option>
+                   <option value=".sh">.sh</option>
+                    <option value=".tv">.tv</option>
+                     <option value=".bz">.bz</option>
+                      <option value=".ws">.ws</option>
+                       <option value=".de">.de</option>
+                        <option value=".ms">.ms</option>
+                         <option value=".gs">.gs</option>
+                          <option value=".in">.in</option>
+                            <option value=".fm">.fm</option>
+                              <option value=".la">.la</option>
+    
+  </select></td>
+	<td width="65"><input type="submit" name="Submit" value="Go!"></td>
+  </tr>
+  <tr><td colspan="4" style="padding-left:50px">
+  
+ 
+	  </td>
+  </tr>
+  </table>
+</form>
+</body>
+</html>
