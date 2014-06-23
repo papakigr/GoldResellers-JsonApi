@@ -6,15 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Domain Name Availiability Search</title>
 
- <script type="text/javascript" language="javascript">
-						function validate2(aform){
-							if (document.getElementById("domainName").value.length  < 3){
-								alert('Παρακαλώ συμπληρώστε όνομα χώρου με 3 χαρακτήρες τουλάχιστον');
-								return false;
-							}
-							return true;
-						}
-					</script>
+ 
 					 <script language=javascript>
 
 function checkDomain2(nname)
@@ -68,12 +60,12 @@ if(dname.length>2 && dname.length<57)
 		  {
 			 if((j==0 || j==dname.length-1) && hh == 45)	
 		  	 {
-		 	  	 alert("Το Domain name δεν πρέπει να ξεκινάει με '-'");
+		 	  	 alert("Invalid domainname");
 			      return false;
 		 	 }
 		  }
 		else	{
-		  	 alert("Το domain name δεν πρέπει να περιέχει ειδικούς χαρακτήρες");
+		  	 alert("Invalid domainname");
 			 return false;
 		  }
 		}
@@ -81,7 +73,7 @@ if(dname.length>2 && dname.length<57)
 }
 else
 {
- alert("Το Domain name πρέπει να περιέχει τουλάχιστον 3 χαρακτήρες");
+ alert("Invalid domainname");
  return false;
 }	
 

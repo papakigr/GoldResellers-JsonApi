@@ -1,15 +1,13 @@
 JsonApi
 =======
 
-Το GoldResellersApi.pdf περιλαμβάνει τις εντολές που υποστηρίζει το api.
+GoldResellersApi.pdf includes all supported api commands.
 
-O φάκελος example περιέχει ένα παράδειγμα μιας κατοχύρωσης domain.
-Θα πρέπει να κάνετε τις ρυθμίσεις στο αρχείο config.php
-Η αρχική σελίδα είναι η demo.html
-Στο αρχείο papaki.php υπάρχουν συναρτήσεις για όλες τις περιπτώσεις του pdf.
-To αρχείο usableweblib.php αφορά την αναζήτηση ονομάτων χώρου
+The folder  example includes an example of a domain registration.
+You have to make the settings at config.php
+demo.html is the home page.
+papaki.php includes functions for all api commands.
+usableweblib.php includes functions used in domain search
 
-
-Μέσα στον φάκελο example υπάρχει και ο φάκελος hosting ο οποίος περιλαμβάνει την αγορά hosting.
-Οι ρυθμίσεις γίνονται και πάλι στο αρχείο example/config.php
-
+An example of hosting purchase is included in folder example/hosting
+ 

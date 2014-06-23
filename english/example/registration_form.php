@@ -14,57 +14,41 @@
    function check_data(form)
     { 
       if (form.fullname.value.length < 1) {
-	   showMessage(form.fullname, "Δεν έχετε συμπληρώσει την Επωνυμία σας.");
+	   showMessage(form.fullname, "Fullname is required");
 	   return false;
       }
 	if (form.firstname.value.length < 1) {
-	showMessage(form.firstname, "Δεν έχετε συμπληρώσει το όνομά σας");
+	showMessage(form.firstname, "Firstname is required");
 	return false;
       }
 	  if (form.lastname.value.length < 1) {
-	showMessage(form.lastname, "Δεν έχετε συμπληρώσει το επίθετό σας.");
+	showMessage(form.lastname, "Lastname is required");
 	return false;
       }
 	  if (form.phoneNum.value.length < 1) {
-	showMessage(form.phoneNum, "Δεν έχετε συμπληρώσει το τηλέφωνό σας");
+	showMessage(form.phoneNum, "Phonenumber is required");
 	return false;
       }
      if (form.emailText.value.length < 1) {
-	   showMessage(form.emailText, "Δεν έχετε συμπληρώσει το email σας");
+	   showMessage(form.emailText, "Email is required");
 	   return false;
       }
 	  if (form.emailText.value.search(/^.+\@(\[?)[a-zA-Z0-9\-\.]+\.([a-zA-Z]{2,3}|[0-9]{1,3})(\]?)$/) == -1)
 	{
-	    return showMessage(form.emailText, "Παρακαλώ συμπληρώστε ένα σωστό Email");
+	    return showMessage(form.emailText, "Email is not valid");
 		return false;
 	}
 	 
-	 if (document.getElementById("list_tr").style.display == 'block'){
-	  	if (form.DropDownListCompanyType.selectedIndex < 1){
-			showMessage(form.DropDownListCompanyType, "Δεν έχετε επιλέξει τον τύπο της εταιρίας σας.");
-			return false;
-		}
-	  }
-	  
-	  if (document.getElementById("afm_tr").style.display == 'block'){
-		  if (form.afm.value.length < 1) {
-			showMessage(form.afm, "Δεν έχετε συμπληρώσει το ΑΦΜ σας");
-			return false;
-		  }
-	
-		if (form.TaxOfficeId.selectedIndex < 1) {
-			showMessage(form.TaxOfficeId, "Δεν έχετε επιλέξει τη ΔΟΥ σας");
-			return false;
-		  }
-	  }
+ 
+	 
 	  if (form.address1.value.length < 1) {
-	showMessage(form.address1, "Δεν έχετε συμπληρώσει τη διεύθυνσή σας.");
+	showMessage(form.address1, "Address is required");
 	return false;
       }
 	  if (form.phoneNum.value.length > 0)
 	  {
 		if (form.phoneNum.value.search(/^\+[0-9]{1,3}\.[0-9]{1,14}$/) == -1){ 
-			showMessage(form.phoneNum, ' Πρεπει να περιέχει ένα έγκυρο αριθμό τηλεφώνου.\n');
+			showMessage(form.phoneNum, 'Phone number is invalid\n');
 			return false;
 		}
 	  }
@@ -73,35 +57,20 @@
 	 {
 		if (form.fax.value.search(/^\+[0-9]{1,3}\.[0-9]{1,14}$/) == -1)
 		{ 
-			showMessage(form.fax, ' Πρεπει να περιέχει ένα έγκυρο αριθμό fax.\n');
+			showMessage(form.fax, '  Fax number is invalid\n');
 			return false;
 	 	}
 	}
     
 	if (form.city.value.length < 1) {
-	showMessage(form.city, "Δεν έχετε συμπληρώσει την πόλη σας");
+	showMessage(form.city, "City is required");
 	return false;
       }
 	  if (form.postcode.value.length < 1) {
-	showMessage(form.zip, "Δεν έχετε συμπληρώσει τον ταχ. κώδικά σας");
+	showMessage(form.zip, "Postcode is required");
 	return false;
       }
-	 if (form.username.value.length < 1) {
-	showMessage(form.username, "Δεν έχετε συμπληρώσει το Όνομα χρήστη");
-	return false;
-      }
-	 if (form.password.value.length < 1) {
-		showMessage(form.password, "Δεν έχετε συμπληρώσει τον Κωδικό σας.");
-		return false;
-      }
-	  if (form.password.value.length < 4) {
-		showMessage(form.password, "Ο κωδικός πρέπει να είναι από 4 έως 16 χαρακτήρες.");
-		return false;
-      }
-	  if (!CompareStrings(form.password.value, form.verify.value)){
-	  	showMessage(form.password, "Οι κωδικοί δεν ταιριάζουν μεταξύ τους.");
-		return false;
-	  }
+ 
 	
 		//edw add ton neo usser
 	  form.submit();		     	  
@@ -171,16 +140,14 @@ function CheckSelected(){
 
 <body>
 <form name="form1" method = "post" action="register.php" onSubmit="return check_data(form1);">
-<input type="hidden" name="domainNames" value="<?= $domainNames?>" />
+<input type="hidden" name="domainNames" value="<?=$domainNames?>" />
 <table align="center" border="0" cellspacing="0" width="100%">
                                                         <tbody>
                                                           <tr>
-                                                            <td width="100%" align="left" valign="top"><p><span id="lblFillFormInstructions">Συμπληρώστε τα στοιχεία του ατόμου ή της εταιρίας που θα <b>Διαχειρίζεται</b> το όνομα/ονόματα που κατοχυρώνετε και μετά πατήστε το κουμπί <b>ΣΥΝΕΧΕΙΑ</b> που βρίσκεται στο κάτω μέρος της σελίδας.<strong> Είναι σημαντικό οι πληροφορίες που δίνεται να είναι ακριβείς.</strong></span><BR>
-                                                                <span id="lblConfidentailWarning">Τα στοιχεία που καταχωρείτε κατά την εγγραφή σας είναι αυστηρά προσωπικά και θα χρησιμοποιηθούν μόνο από την UsableWeb και την ΕΕΤΤ την αρμόδια αρχή για την εκχώρηση Ονομάτων Δικτυακών Τόπων με κατάληξη .gr.<br>
-                                                                Σε καμία περίπτωση δε θα γνωστοποιηθούν και δεν θα χρησιμοποιηθούν από τρίτους.</span></p>
+                                                            <td width="100%" align="left" valign="top"><p><span id="lblFillFormInstructions">Registrant Details</span></p>
                                                                 
                                                                 
-                                                                <p><strong>Το όνομα χώρου θα κατοχυρωθεί για 2 έτη</strong></p>                                                            </td>
+                                                                <p><strong>Registration Period:2 years</strong></p>                                                            </td>
                                                           </tr>
                                                           <tr>
                                                             <td>
@@ -203,7 +170,7 @@ function CheckSelected(){
 	<table width="100%">
 	
 		<tr>
-		<td width="40%">Επιλέξτε Τύπο Επιχείρησης:</td>
+		<td width="40%">Company Type:</td>
 		<td width="60%" align="left">
       
          
@@ -220,19 +187,19 @@ function CheckSelected(){
 	  
 	  
     <tr align="left">
-      <td width="40%" align="right" valign="top" class="medgray"><div align="left">&nbsp;Επωνυμία Εταιρίας/Φορέα - ή - Το Ονοματεπώνυμο σας : </div></td>
+      <td width="40%" align="right" valign="top" class="medgray"><div align="left">&nbsp;Fullname: </div></td>
       <td valign="middle">
         <input name="fullname" type="text" id="fullaname" size="32">
-        <span class="smgray">Είναι σημαντικό να δώσετε το πλήρες ονοματεπώνυμο ή την πλήρη επωνυμία της εταιρίας. Σε διαφορετική περίπτωση το όνομα χώρου μπορεί να μην εγκριθεί από την ΕΕ</span></td>
+        </td>
     </tr>
     <tr align="left">
-      <td width="40%" align="right" class="medgray"><div align="left">&nbsp;Όνομα : </div></td>
+      <td width="40%" align="right" class="medgray"><div align="left">&nbsp;FirstName : </div></td>
       <td><label>
         <input name="firstname" type="text" id="firstname" size="32">
       </label></td>
     </tr>
     <tr align="left">
-      <td align="right" class="medgray" width="40%"><div align="left">&nbsp;Επίθετο : </div></td>
+      <td align="right" class="medgray" width="40%"><div align="left">&nbsp;LastName : </div></td>
       <td>
         <input name="lastname" type="text" id="lastname" size="32"></td>
     </tr>
@@ -242,10 +209,9 @@ function CheckSelected(){
   	<div id="afm_tr" style="display:none">
 	<table width="100%">
   	<tr align="left" valign="top">
-       <td class="medgray" width="40%"><div align="left">Α.Φ.Μ. : </div></td>
+       <td class="medgray" width="40%"><div align="left">Vat number : </div></td>
        <td class="medgray" width="60%%"><input name="afm" type="text" id="afm" size="32">
-        		 <br>
-            Το ΑΦΜ το χρειαζόμαστε για  την έκδοση τιμολογίου στην κατοχύρωση ή ανανέωση κατοχύρωσης</td>
+        		 </td>
      </tr>
 	  </table>
         </div>
@@ -255,10 +221,10 @@ function CheckSelected(){
     <td colspan="2"><div id="doy_tr" style="display:none">
       <table width="100%">
         <tr align="left" bordercolordark="#FFFFFF" bgcolor="#FFFFFF">
-          <td align="left" width="40%" class="medgray"><div align="left">&Delta;&Omicron;&Upsilon; : </div></td>
+          <td align="left" width="40%" class="medgray"><div align="left">Tax office : </div></td>
           <td align="left" width="60%"><select name="doy">
-            <option value="">[Επιλέξτε ΔΟΥ]</option>
-            <option value="">[Επιλέξτε ΔΟΥ]</option>
+            <option value="">[Select Tax Office]</option>
+            <option value="">[Select Tax Office]</option>
             <option value="ΑΓ. ΑΘΑΝΑΣΙΟΥ">ΑΓ. ΑΘΑΝΑΣΙΟΥ </option>
             <option value="ΑΓ.ΑΝΑΡΓΥΡΩΝ">ΑΓ.ΑΝΑΡΓΥΡΩΝ </option>
             <option value="ΑΓ.ΠΑΡΑΣΚΕΥΗΣ">ΑΓ.ΠΑΡΑΣΚΕΥΗΣ </option>
@@ -565,7 +531,7 @@ function CheckSelected(){
     <td colspan="2"><div id="drast_ep" style="display:none">
       <table width="100%">
         <tr align="left" valign="top">
-          <td nowrap="nowrap" width="40%">&Delta;&rho;&alpha;&sigma;&tau;&eta;&rho;&iota;&#972;&tau;&eta;&tau;&alpha; &Epsilon;&pi;&iota;&chi;&epsilon;&#943;&rho;&eta;&sigma;&eta;&sigmaf; :</td>
+          <td nowrap="nowrap" width="40%">Business Type :</td>
           <td class="medgray" width="60%"><input name="businessDrast" type="text" id="businessDrast" size="32" /></td>
         </tr>
       </table>
@@ -579,33 +545,33 @@ function CheckSelected(){
     </tr>
     <tr align="left" valign="top">
       <td class="medgray"><div align="right" class="smgray"></div></td>
-      <td class="medgray"><span class="smgray"> Παράδειγμα: <a href="https://www.papaki.gr/onoma@yahoo.gr"><font color="#3366ff">onoma@yahoo.gr</font></a> Πρέπει να πληκτρολογήσετε μια σωστή διεύθυνση email διότι σε αυτό το email θα σας στέλνουμε την υπενθύμιση λήξης καταχώρησης και άλλες σημαντικές πληροφορίες. <br>
+      <td class="medgray"><span class="smgray"> Example: <a href="https://www.papaki.gr/onoma@yahoo.gr"><font color="#3366ff">name@yahoo.gr</font></a>  
         </span></td>
     </tr>
     <tr align="left">
-      <td align="right" class="medgray"><div align="left">&nbsp;Διεύθυνση : </div></td>
+      <td align="right" class="medgray"><div align="left">&nbsp;Address : </div></td>
       <td><label>
         <input name="address1" type="text" id="streetNum" size="32">
       </label></td>
     </tr>
     <tr align="left">
-      <td align="right" class="medgray" width="40%"><div align="left">&nbsp;Περιοχή :</div></td>
+      <td align="right" class="medgray" width="40%"><div align="left">&nbsp;State :</div></td>
       <td><span class="style15">
         <input name="stateProvince" type="text" id="stateProvince" size="32">
         </span></td>
     </tr>
     <tr align="left">
-      <td align="right" class="medgray"><div align="left">&nbsp;Πόλη/Χωριό :</div></td>
+      <td align="right" class="medgray"><div align="left">&nbsp;City :</div></td>
       <td><span class="style15">
         <input name="city" type="text" id="city" size="32" maxlength="50">
       </span></td>
     </tr>
     <tr align="left">
-      <td align="right" class="medgray"><div align="left">&nbsp;Ταχ.Κώδικας : </div></td>
+      <td align="right" class="medgray"><div align="left">&nbsp;PostCode : </div></td>
       <td><input name="postcode" type="text" id="zip" size="32" maxlength="50"></td>
     </tr>
     <tr align="left">
-      <td align="right" class="medgray"><div align="left">&nbsp;Χώρα :</div></td>
+      <td align="right" class="medgray"><div align="left">&nbsp;Country :</div></td>
       <td class="style15">
          <select name="country" id="country" size="1">
            <option selected="selected" value="GR">Greece</option>
@@ -842,22 +808,22 @@ function CheckSelected(){
          </select></td>
     </tr>
     <tr align="left">
-      <td align="right" class="medgray"><div align="left">&nbsp;Τηλέφωνο :</div></td>
+      <td align="right" class="medgray"><div align="left">&nbsp;PhoneNumber :</div></td>
       <td><label>
         <input name="phoneNum" type="text" id="phoneNum" size="32">
       </label></td>
     </tr>
     <tr align="left" valign="top">
       <td class="medgray"><div align="right" class="smgray"></div></td>
-      <td class="medgray"><span class="smgray">π.χ. +30.2105555555 <br>
+      <td class="medgray"><span class="smgray">i.e. +30.2105555555 <br>
         </span></td>
     </tr>
     <tr align="left">
-      <td align="right" class="medgray"><div align="left">&nbsp;Κινητό (Προαιρετικό): </div></td>
+      <td align="right" class="medgray"><div align="left">&nbsp;Mobile (Optional): </div></td>
       <td><input name="mobile" type="text" id="mobile" size="32"></td>
     </tr>
     <tr align="left">
-      <td align="right" class="medgray"><div align="left">&nbsp;Fax (Προαιρετικό): </div></td>
+      <td align="right" class="medgray"><div align="left">&nbsp;Fax (Optional): </div></td>
       <td><input name="fax" type="text" id="fax" size="32"></td>
     </tr>
     <tr align="left">
@@ -869,8 +835,7 @@ function CheckSelected(){
 	</TR>
 	<TR>
 							
-							<TD height="25" colspan="2"><input name="chkNewsletters" id="chkNewsletters" type="checkbox" checked="checked" value="1" />&nbsp;Επιθυμώ 
-						  να λαμβάνω πληροφορίες για προσφορές και νέα προιόντα</TD>
+							<TD height="25" colspan="2"><input name="chkNewsletters" id="chkNewsletters" type="checkbox" checked="checked" value="1" />&nbsp;I would like to receive newsletters</TD>
 						</TR>
 						<TR>
 							
@@ -879,7 +844,7 @@ function CheckSelected(){
 						<TR>
 							
 							<TD align="right" colspan="2">
-						  <input type="image" name="imgBtnContinue" id="imgBtnContinue" src="images/continueEl.gif" alt="" border="0" /></TD>
+						  <input type="image" name="imgBtnContinue" id="imgBtnContinue" src="images/continueEN.gif" alt="" border="0" /></TD>
 						</TR>
 						<TR>
 							<TD width="40%" height="25">&nbsp;</TD>
