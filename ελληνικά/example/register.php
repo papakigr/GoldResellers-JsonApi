@@ -241,14 +241,15 @@ error_reporting(0);
 	$params["companyname"]=$fullname;
 	$params["firstname"]=$firstname;
 	$params["lastname"]=$lastname;
+	$params["fullname"]=$params["firstname"]." ".$params["lastname"];
 	$params["address1"]=$address1;
 	$params["address2"]="";
 	$params["city"]=$city;
 	$params["state"]=$stateProvince;
 	$params["postcode"]=$postcode;
-	$params["country"]=$country;
+	$params["countrycode"]=$country;
 	$params["email"]=$emailText;
-	$params["phonenumber"]=$phoneNum;
+	$params["fullphonenumber"]=$phoneNum;
 	$params["fax"]=$fax;
 	  
 	$params["APIkey"]=$Papaki_apikey;
