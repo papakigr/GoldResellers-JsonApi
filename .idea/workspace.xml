@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58f9cc98-cc32-40e3-8bf9-039eff8f4128" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/english/ChangeLogs.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/english/example/libs/HttpClient.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/english/example/libs/HttpClient.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/english/example/papaki.php" beforeDir="false" afterPath="$PROJECT_DIR$/english/example/papaki.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/english/example/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/english/example/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ελληνικά/ChangeLogs.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ελληνικά/example/libs/HttpClient.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/ελληνικά/example/libs/HttpClient.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ελληνικά/example/papaki.php" beforeDir="false" afterPath="$PROJECT_DIR$/ελληνικά/example/papaki.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ελληνικά/example/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/ελληνικά/example/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/GoldResellers-JsonApi.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,19 +22,16 @@
         <entry file="file://$PROJECT_DIR$/ελληνικά/README.rst">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="papaki.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="papaki.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ελληνικά/example/papaki.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
-              <folding>
-                <element signature="n#papaki_registerdomain#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="-771">
+              <caret line="328" column="28" selection-start-line="328" selection-start-column="16" selection-end-line="328" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -44,8 +39,8 @@
       <file leaf-file-name="papaki.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/english/example/papaki.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="772">
-              <caret line="1487" lean-forward="true" selection-start-line="1487" selection-end-line="1487" />
+            <state relative-caret-position="23222">
+              <caret line="1487" selection-start-line="1487" selection-end-line="1487" />
               <folding>
                 <element signature="n#papaki_registerdomain#0;n#!!top" />
               </folding>
@@ -53,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ελληνικά/example/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="249" column="36" lean-forward="true" selection-start-line="249" selection-start-column="36" selection-end-line="249" selection-end-column="36" />
+            <state relative-caret-position="436">
+              <caret line="237" column="4" selection-start-line="237" selection-start-column="4" selection-end-line="237" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -97,12 +92,12 @@
       <find>$subject</find>
       <find>register</find>
       <find>$headers</find>
-      <find>registerd</find>
       <find>nikoli</find>
       <find>log</find>
       <find>namese</find>
       <find>nameserver</find>
       <find>registerdo</find>
+      <find>registerd</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -128,16 +123,17 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-7" />
-    <option name="width" value="1934" />
-    <option name="height" value="1045" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="width" value="1935" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -145,19 +141,41 @@
               <item name="GoldResellers-JsonApi" type="b2602c69:ProjectViewProjectNode" />
               <item name="GoldResellers-JsonApi" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="GoldResellers-JsonApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoldResellers-JsonApi" type="462c0819:PsiDirectoryNode" />
+              <item name="english" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GoldResellers-JsonApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoldResellers-JsonApi" type="462c0819:PsiDirectoryNode" />
+              <item name="english" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GoldResellers-JsonApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoldResellers-JsonApi" type="462c0819:PsiDirectoryNode" />
+              <item name="ελληνικά" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GoldResellers-JsonApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoldResellers-JsonApi" type="462c0819:PsiDirectoryNode" />
+              <item name="ελληνικά" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../top.host/top.host" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/english" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/english/example/papaki.php" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/english/example/register.php" />
+    <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/english" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -182,28 +200,30 @@
       <option name="presentableId" value="Default" />
       <updated>1554199955183</updated>
       <workItem from="1554199956388" duration="6774000" />
-      <workItem from="1554295298992" duration="1323000" />
+      <workItem from="1554295298992" duration="1649000" />
+      <workItem from="1554357863900" duration="16000" />
+      <workItem from="1554357899213" duration="815000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8097000" />
+    <option name="totallyTimeSpent" value="9254000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="2575" height="1415" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25239617" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25645098" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -221,15 +241,112 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ελληνικά/README.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ελληνικά/example/papaki.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/english/example/papaki.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23222">
+          <caret line="1487" lean-forward="true" selection-start-line="1487" selection-end-line="1487" />
+          <folding>
+            <element signature="n#papaki_registerdomain#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../My Web Sites/host.al/new/enartiahostal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../My Web Sites/host.al/new/module.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="87" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/english/example/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4250">
+          <caret line="250" column="32" selection-start-line="250" selection-start-column="32" selection-end-line="250" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ελληνικά/example/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4437">
+          <caret line="261" column="22" lean-forward="true" selection-start-line="261" selection-start-column="22" selection-end-line="261" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ελληνικά/README.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ελληνικά/example/papaki.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/english/example/papaki.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23222">
+          <caret line="1487" lean-forward="true" selection-start-line="1487" selection-end-line="1487" />
+          <folding>
+            <element signature="n#papaki_registerdomain#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../My Web Sites/host.al/new/enartiahostal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../My Web Sites/host.al/new/module.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="87" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/english/example/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4250">
+          <caret line="250" column="32" selection-start-line="250" selection-start-column="32" selection-end-line="250" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ελληνικά/example/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4437">
+          <caret line="261" column="22" lean-forward="true" selection-start-line="261" selection-start-column="22" selection-end-line="261" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ελληνικά/README.rst">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ελληνικά/example/papaki.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="38" selection-end-line="1486" />
-          <folding>
-            <element signature="n#papaki_registerdomain#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -301,24 +418,14 @@
     <entry file="file://$PROJECT_DIR$/ελληνικά/README.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ελληνικά/example/papaki.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="n#papaki_registerdomain#0;n#!!top" />
-          </folding>
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/english/example/papaki.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="772">
-          <caret line="1487" lean-forward="true" selection-start-line="1487" selection-end-line="1487" />
+        <state relative-caret-position="23222">
+          <caret line="1487" selection-start-line="1487" selection-end-line="1487" />
           <folding>
             <element signature="n#papaki_registerdomain#0;n#!!top" />
           </folding>
@@ -327,8 +434,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ελληνικά/example/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="249" column="36" lean-forward="true" selection-start-line="249" selection-start-column="36" selection-end-line="249" selection-end-column="36" />
+        <state relative-caret-position="436">
+          <caret line="237" column="4" selection-start-line="237" selection-start-column="4" selection-end-line="237" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ελληνικά/example/papaki.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-771">
+          <caret line="328" column="28" selection-start-line="328" selection-start-column="16" selection-end-line="328" selection-end-column="28" />
         </state>
       </provider>
     </entry>
