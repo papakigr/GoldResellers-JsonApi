@@ -18,7 +18,7 @@ class HttpClient {
     var $accept_language = 'en-us';
     var $user_agent = 'Incutio HttpClient v0.9';
     // Options
-    var $timeout = 20;
+    var $timeout = 150;
     var $use_gzip = true;
     var $persist_cookies = true;  // If true, received cookies are placed in the $this->cookies array ready for the next request
                                   // Note: This currently ignores the cookie path (and time) completely. Time is not important, 
@@ -39,7 +39,7 @@ class HttpClient {
     // Tracker variables
     var $redirect_count = 0;
     var $cookie_host = '';
-    function HttpClient($host, $port=80) {
+    public  function __construct($host, $port=80) {
         $this->host = $host;
         $this->port = $port;
     }
@@ -309,7 +309,7 @@ class HttpClient {
             return $client->getContent();
         }
     }
-    function quickPost($url, $data) {
+    public static function quickPost($url, $data) {
         $bits = parse_url($url);
         $host = $bits['host'];
         $port = isset($bits['port']) ? $bits['port'] : 80;
